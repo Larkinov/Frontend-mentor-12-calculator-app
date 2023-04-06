@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+:root{
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+
+  --font-size-form: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Space Mono', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-grayish-cyan);
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+  font-size: var(--font-size-form);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.board{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 1rem;
+  padding:2rem;
+}
+
+.panelLeft{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  margin-right: 2rem;
+  padding:2rem;
+}
+
+.panelRight{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  background-color: var(--very-dark-cyan);
+  border-radius: 1rem;
+  padding:2rem;
+}
+
+@media screen and (max-width:1800px) {
+  
+  .board{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+    height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .panelLeft{
+    width: 100%;
+    margin-right: 0rem;
+    padding:1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .panelRight{
+    height:60%;
+    width: 100%;
+    padding:1rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .board{
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .board{
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .board{
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .board{
+    width: 80vw;
   }
 }

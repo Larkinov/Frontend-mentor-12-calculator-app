@@ -1,0 +1,66 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: right;
+  font-size: var(--font-size-form);
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+  width: 100%;
+}
+
+.input:invalid{
+  outline: 2px solid red;
+}
+
+.input::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.inputBill {
+  background-image: url(../../images/icon-dollar.svg);
+}
+.inputNumber {
+  background-image: url(../../images/icon-person.svg);
+}
+.inputCustom {
+  padding: 1rem;
+}
+.inputCustom::placeholder {
+  text-align: center;
+}
+
+.input:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .inputCustom {
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .inputCustom {
+    font-size: 0.8rem;
+  }
+}

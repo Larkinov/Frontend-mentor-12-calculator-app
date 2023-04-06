@@ -1,0 +1,52 @@
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --light-strong-cyan: hsl(172, 100%, 75%);
+--very-dark-cyan: hsl(183, 100%, 15%);
+--dark-grayish-cyan: hsl(186, 14%, 43%);
+--grayish-cyan: hsl(184, 14%, 56%);
+--light-grayish-cyan: hsl(185, 41%, 84%);
+--very-light-grayish-cyan: hsl(189, 41%, 97%);
+}
+
+.select{
+    background-color: var(--very-dark-cyan);
+    color:white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: var(--font-size-form);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.select:hover{
+    /* background-color: var(--strong-cyan); */
+    opacity: 0.8;
+}
+
+.reset{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: var(--font-size-form);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.resetNoActive{
+    background-color: var(--strong-cyan);
+    opacity: 0.2;
+    color:var(--very-dark-cyan);
+}
+
+.resetActive{
+    background-color: var(--strong-cyan);
+    color:var(--very-dark-cyan);
+    transition: all 0.15s ease-in;
+}
+
+.resetActive:hover{
+    background-color: var(--light-strong-cyan);
+    opacity: 0.8;
+}

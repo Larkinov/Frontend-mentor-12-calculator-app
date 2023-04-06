@@ -1,0 +1,22 @@
+.costPanel{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title{
+    color:white;
+    line-height: 1rem;
+}
+
+.percent{
+    color:var(--grayish-cyan);
+    line-height: 1rem;
+}
+
+.cost{
+    font-size: var(--font-size-form);
+    color:var(--strong-cyan);
+    font-weight: 700;
+}
