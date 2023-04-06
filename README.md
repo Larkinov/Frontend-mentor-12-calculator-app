@@ -20,4 +20,8 @@ Your users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
+<<<<<<< HEAD
 - Calculate the correct tip and total cost of the bill per person
+=======
+- Calculate the correct tip and total cost of the bill per person
+>>>>>>> 16b4a2def5c88bff3b14d4b6eefac8f359003d0d
